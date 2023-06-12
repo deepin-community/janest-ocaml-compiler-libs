@@ -1,0 +1,2 @@
+version=4
+https://github.com/janestreet/ocaml-compiler-libs/releases .*-v?([0-9.]+)\.tbz
