@@ -1,5 +1,39 @@
-template-repository (1.0-1) unstable; urgency=medium
+janest-ocaml-compiler-libs (0.12.4-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release
+  * Bump Standards-Version to 4.6.0
+  * Bump debian/watch version to 4
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 28 Nov 2021 11:22:59 +0100
+
+janest-ocaml-compiler-libs (0.12.3-1) unstable; urgency=medium
+
+  [ Stéphane Glondu ]
+  * New upstream release
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 07 Nov 2020 14:03:03 +0100
+
+janest-ocaml-compiler-libs (0.12.1-2) unstable; urgency=medium
+
+  * Bump debhelper compat level to 13
+  * Add empty override_dh_dwz to prevent FTBFS
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 31 Jul 2020 12:56:49 +0200
+
+janest-ocaml-compiler-libs (0.12.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.5.0
+  * Add Rules-Requires-Root: no
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 10 Feb 2020 04:58:42 +0100
+
+janest-ocaml-compiler-libs (0.12.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #934896)
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 16 Aug 2019 11:49:24 +0200

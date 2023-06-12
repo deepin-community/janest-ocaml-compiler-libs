@@ -1,15 +1,34 @@
-Source: template-repository
-Section: unknown
+Source: janest-ocaml-compiler-libs
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders:
+ Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ ocaml-nox,
+ ocaml-compiler-libs,
+ ocaml-dune,
+ dh-ocaml
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Section: ocaml
+Homepage: https://github.com/janestreet/ocaml-compiler-libs
+Vcs-Git: https://salsa.debian.org/ocaml-team/janest-ocaml-compiler-libs.git
+Vcs-Browser: https://salsa.debian.org/ocaml-team/janest-ocaml-compiler-libs
 
-Package: template-repository
+Package: libocaml-compiler-libs-ocaml-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: ${ocaml:Provides}
+Recommends: ocaml-findlib
+Description: OCaml compiler libraries repackaged
+ This package simply repackages the OCaml compiler libraries so they
+ don’t expose everything at toplevel. For instance Ast_helper is now
+ Ocaml_common.Ast_helper.
+ .
+ The special library ocaml_shadow adds a deprecation warning on all
+ modules from the compiler libraries, to force the user to use the
+ prefixed names.
