@@ -1,3 +1,23 @@
+janest-ocaml-compiler-libs (0.12.4-4) unstable; urgency=medium
+
+  * Depend on ocaml instead of transitional ocaml-nox
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 12 Sep 2023 07:50:30 +0200
+
+janest-ocaml-compiler-libs (0.12.4-3) unstable; urgency=medium
+
+  * Include ocamlvars.mk in debian/rules
+  * Bump Standards-Version to 4.6.2
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 22 Jul 2023 09:06:22 +0200
+
+janest-ocaml-compiler-libs (0.12.4-2) unstable; urgency=medium
+
+  * Remove obsolete patch
+  * Use ocaml_dune DH buildsystem
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 15 Jul 2023 10:17:37 +0200
+
 janest-ocaml-compiler-libs (0.12.4-1) unstable; urgency=medium
 
   * New upstream release
